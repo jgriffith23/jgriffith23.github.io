@@ -1,3 +1,3 @@
-# Welcome to My GitHub Pages Blog!
+# Welcome to the Readme!
 
-It's a work in progress. 
+Nothing to see here yet.
