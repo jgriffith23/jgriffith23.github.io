@@ -1,12 +1,12 @@
 /* Parts of stylesheet borrowed from the tutorial at http://jmcglone.com/guides/github-pages/ */
 
 .float-left-area  {
-		  width: 30%;
+		  width: 70%;
 		  float: left;
 		  }
 
 .float-right-area {
-		  width: 70%;
+		  width: 30%;
 		  float: left;
 		  }
 
