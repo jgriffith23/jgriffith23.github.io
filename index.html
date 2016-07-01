@@ -1,32 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-	<title>Jennifer Griffith-Delgado</title>
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
-  <body>
-    <h1>Jennifer Griffith-Delgado</h1>
-    <h2>Technical Writer/Editor, Engineering Student</h2>
-    <hr>
-    
-    <div class="float-left-area">
-        <div class="inner-left">
+---
+layout: default
+---
 
-            <p>So maybe text can go here? <a href="http://jgriffith23.github.io/test">Here's another page.</a></p>
+<div class="home">
 
-        </div>
-     </div>
+  <h1 class="page-heading">Posts</h1>
 
-     <div class="float-right-area">
-         <div class="inner-right">
-              <ul>
-              	<li><a href="https://twitter.com/onegirlgeek">Twitter</a></li>
-              	<li><a href"https://github.com/jgriffith23">GitHub</a></li>
-              </ul>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-          </div>
-      </div>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-      <div class="clear-floated"></div>
-  </body>
-</html>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
