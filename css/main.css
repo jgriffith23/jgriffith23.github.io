@@ -1,12 +1,12 @@
-/* Stylesheet borrowed from the lovely tutorial at http://jmcglone.com/guides/github-pages/ */
+/* Parts of stylesheet borrowed from the tutorial at http://jmcglone.com/guides/github-pages/ */
 
 .float-left-area  {
-		  width: 70%;
+		  width: 30%;
 		  float: left;
 		  }
 
 .float-right-area {
-		  width: 30%;
+		  width: 70%;
 		  float: left;
 		  }
 
@@ -20,7 +20,7 @@
 .inner-right	  {
 		  font-size: 11px;
 		  padding: 5px 5px 5px 5px;
-		  border: #999999 1px solid;
+		  /*border: #999999 1px solid;*/
 		  min-height: 60px;
 		  }
 
