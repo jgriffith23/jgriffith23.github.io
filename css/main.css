@@ -13,14 +13,14 @@
 .inner-left	  {
 		  padding: 5px 5px 5px 5px;
 		  margin-right: 10px;
-		  border: #999999 1px solid;
+		  /*border: #999999 1px solid;*/
 		  min-height: 60px;
 		  }
 
 .inner-right	  {
 		  font-size: 11px;
 		  padding: 5px 5px 5px 5px;
-		  /*border: #999999 1px solid;*/
+		  border: #999999 1px solid;
 		  min-height: 60px;
 		  }
 
