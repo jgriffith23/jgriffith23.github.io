@@ -11,7 +11,7 @@ I'm currently a student at [Hackbright Academy](https://hackbrightacademy.com/),
 My plan is to use this GitHub blog to do several things:
 
 * Reflect on my experiences at Hackbright
-* Practice HTML, CSS, and Markdown
+* Practice HTML, CSS, Git, and Markdown
 * Keep my writing skills (both technical and non-technical) fresh
 
 When I'm not coding or editing, you can probably find me poking at stuff with a multimeter (or sonic screwdriver), trying to break something, or on a crafting adventure involving LEDs and thread. 
