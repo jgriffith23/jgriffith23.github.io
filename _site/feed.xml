@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jennifer Griffith-Delgado</title>
+    <description>Practicing, reflecting, and learning about software engineering, among other technical things.
+</description>
+    <link>http://jgriffith23.github.io/</link>
+    <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Jul 2016 00:23:09 -0700</pubDate>
+    <lastBuildDate>Sat, 02 Jul 2016 00:23:09 -0700</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>My First Post!</title>
+        <description>&lt;p&gt;I’m testing out my new GitHub blog setup with Jekyll. Since I’m about to learn a ton of Python, let’s start with a little &lt;em&gt;Hello World&lt;/em&gt; program. It is tradition after all.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Thu, 30 Jun 2016 22:06:54 -0700</pubDate>
+        <link>http://jgriffith23.github.io/learning/2016/06/30/My-First-Post.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/learning/2016/06/30/My-First-Post.html</guid>
+        
+        
+        <category>learning</category>
+        
+      </item>
+    
+  </channel>
+</rss>
