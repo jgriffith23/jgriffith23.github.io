@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, I'm Jennifer. I have a degree in [electrical engineering](http://www.ece.ufl.edu/), I spent several years [editing technical books](https://www.nostarch.com), and until recently, I was a freelance technical editor and writer.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm currently a student at [Hackbright Academy](https://hackbrightacademy.com/), where I'm learning the skills to be a software engineer. I've built robots and designed PCBs, but the Web and the applications that live on it have always been something of a mystery to me, so I'm psyched to be at Hackbright.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+My plan is to use this GitHub blog to do several things:
+
+* Reflect on my experiences at Hackbright
+* Practice HTML, CSS, and Markdown
+* Keep my writing skills (both technical and non-technical) fresh
+
+When I'm not coding or editing, you can probably find me poking at stuff with a multimeter (or sonic screwdriver), trying to break something, or on a crafting adventure involving LEDs and thread. 
+
+Allons-y!

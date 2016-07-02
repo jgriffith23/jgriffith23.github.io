@@ -7,11 +7,10 @@
 
 # Site settings
 title: Jennifer Griffith-Delgado
-email: jennifer.gd42@gmail.com
+email: jennifer [dot] gd42 [at] gmail [dot] com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm a technical writer and editor, and I'm studying software
-  engineering at Hackbright Academy. This blog is where I'm 
-  documenting all the awesome stuff I learn!
+  Practicing, reflecting, and learning about software engineering,
+  among other technical things.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jgriffith23.github.io" # the base hostname & protocol for your site
 twitter_username: onegirlgeek
