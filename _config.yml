@@ -18,3 +18,12 @@ github_username:  jgriffith23
 
 # Build settings
 markdown: kramdown
+
+#Headers
+defaults:
+  -
+    scope:
+        path: ""
+        type: "posts"
+    values:
+        author: "Jennifer"
