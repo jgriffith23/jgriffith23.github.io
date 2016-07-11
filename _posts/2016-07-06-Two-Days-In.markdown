@@ -19,7 +19,7 @@ I'm really looking forward to learning from my peers like this for the rest of t
 
 # The Linux Command Line Is Amazing
 
-I haven't done much with Linux in years, but between my dabblings with *Automate the Boring Stuff with Python*, revisiting *Hacking: The Art of Exploitation*, and starting at Hackbright, I have a renwewed appreciation for the command line. It's so much faster to just do everything from the keyboard that I'm starting to resent clicking icons a little bit. 
+I haven't done much with Linux in years, but between my own dabblings with Python, revisiting *Hacking: The Art of Exploitation*, and starting at Hackbright, I have a renwewed appreciation for the command line. It's so much faster to just do everything from the keyboard that I'm starting to resent clicking icons a little bit. 
 
 # Git Isn't So Bad
 
