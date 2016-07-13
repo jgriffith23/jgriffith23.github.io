@@ -15,16 +15,21 @@ Here are some of the places where I've found myself explaining code, and why I t
 
 So far, I've encountered four primary scenarios for explaining code. One involves speaking out loud, and the others involve documenting something about code in writing. (Admittedly, I'm pretty good at writing, but writing for in-code documentation is a skill unto itself.) Each category I mention here also relates to a slightly different audience. 
 
-## Talk About Your Code with Other Programmers
+## Describing Your Code Aloud
 
-In pair programming, the idea is that you're constantly discussing what's going on in your code. 
+In pair programming, the idea is that you're constantly discussing what's going on in your code, out loud. Since you frequently switch who's driving and who's navigating, talking through each line together as you program is the best way to make sure both you and your partner understand what everything does. Maybe you know exactly how a method works and want to just plop it into your file with no discussion, but if your partner doesn't, they'll get confused.
+
+This vocal discussion can (should) even begin before you start actually coding up a solution to a problem. First, you'll probably to grab a pen and paper, and just write a plan in pseudocode. You might have one approach while your partner sees the problem differently, and by talking about your ideas, you can find the best solution.
+
+Collaborators you see in person need to know what the program they're helping to create does, but sometimes, programmers and other users you don't see at work will need that information, too. You could keep all the details in your head and just Skype with the other person to get them up to speed, but documenting your code as you write it is much more efficient.
 
 ## Docstrings == <3
-Tired of 
 
-## Comment All the Things
+I knew from the first docstring I saw that I wanted to learn how to write them well. A docstring is 
 
-## Commit Often and Write Useful Commit Messages
+## Commenting All the Things
+
+## Committing Often, with Useful Commit Messages
 
 # The Benefits of Explaining Well
 
