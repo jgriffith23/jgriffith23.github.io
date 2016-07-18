@@ -90,5 +90,9 @@ And of course, if someone's following your project or collaborating with you, ma
 
 Apart from getting better at explaining code in general, I think all of these situations are also helping me think faster on my feet. I tend to be very methodical in my thought processes, so if I try to just speak on the fly, I can trip myself up. (That's why I love writing so much--it gives me more time to process my thoughts.) But I really feel that I'm starting to organize my thoughts more quickly, which is fantastic. 
 
+>Quote of the Week:
+>"About half the bugs you'll make in your life will be, "That thing is not what you thought it was!""
+>--Joel (Perhaps quoting someone else; I don't recall.)
+
 
 
