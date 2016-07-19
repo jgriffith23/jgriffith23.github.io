@@ -23,7 +23,7 @@ Coming from C-landia, this was one of the strangest things for me to grok about 
 
 ![Loosely Typed](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/LooseTypes.png "Loosely Typed")
 
-But everything seems to work out in the end. I can see now that it is possible to not know whether the user will give you a string or a number and not end up with a program that breaks--you just have to handle the input appropriately. I've also just come to accept and enjoy the fact that I don't have to program it quite so rigid a structure as I used to. 
+But everything seems to work out in the end. I can see now that it is possible to not know whether the user will give you a string or a number and not end up with a program that breaks--you just have to handle the input appropriately. I've also just come to accept and enjoy the fact that I don't have to program in quite so rigid a structure as I used to. 
 
 # For Good Style and Sanity, Don't Mix Tabs and Spaces
 
@@ -31,7 +31,7 @@ In Python, indentation matters. It's the only way your code blocks get set apart
 
 ![Tabs and Spaces](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/tabs.png "Tabs and Spaces")
 
-Nothing should actually explode, but people may get upset with you if their indentation goes sideways because you started using tabs instead of spaces.
+Nothing should actually explode, but people may get upset with you if their program goes sideways due to indentation errors because you started using tabs instead of spaces.
 
 # Don't Freak Out--Try It Out!
 
@@ -39,7 +39,7 @@ One of my favorite aspects of Python is the fact that you can just try something
 
 ![Python SPACE!!](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/pythonspace.png "Now entering the Python space...")
 
-I've really enjoyed using bpython instead of standard Python lately. It has tab completion and syntax highlighting! 
+I've really enjoyed using `bpython` instead of the standard `python` program lately. It has tab completion and syntax highlighting! 
 
 # Still Stuck?
 
