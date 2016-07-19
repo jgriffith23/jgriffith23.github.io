@@ -32,7 +32,7 @@ More detailed explanations can go after a blank line.
 You can include example code for Python to use to test your program, too, 
 like this:
 
->>>call_function(argument)
+>>> call_function(argument)
 "Put the expected output here! :)"
 
 """
@@ -43,7 +43,7 @@ print "This is some actual code that will execute."
 The beautiful thing about docstrings is that they generate documentation for you. Everything you put in a docstring appears in the Python console if someone calls `help()` and passes the name of your function. So if you make a function called `helpful_function()` and include a docstring, a user could enter the following in the Python console to access your explanation:
 
 {% highlight python %}
->>>help(helpful_function)
+>>> help(helpful_function)
 {% endhighlight %}
 
 And they'd see something like this: 
