@@ -6,9 +6,76 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jul 2016 00:20:31 -0700</pubDate>
-    <lastBuildDate>Mon, 18 Jul 2016 00:20:31 -0700</lastBuildDate>
+    <pubDate>Sun, 24 Jul 2016 23:40:23 -0700</pubDate>
+    <lastBuildDate>Sun, 24 Jul 2016 23:40:23 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Strengths and Interests</title>
+        <description>&lt;p&gt;After a whirlwind week of HTML, CSS, and Flask, I know roughly how to make web pages talk to each other. Woohoo! Definitely still have a lot to learn, though. I also finally hit some areas of programming that I just don’t grok intuitively, and grappling with them has been…interesting.&lt;/p&gt;
+
+&lt;p&gt;I’m a logical person. I like simplifying logic equations with De Morgan’s theorem and then building little systems to represent them with logic gates. I used to do those gridded logic puzzles on paper for fun, and I’m one of those weirdos who gets excited about stepping through programs with debuggers.&lt;/p&gt;
+
+&lt;p&gt;But I’m also a creative person. I love writing, doodling, cross-stitching, watercolor painting, photography, and costuming. One of my favorite programming tools is Processing because I can use it to code art. I’ll take any excuse to combine crafting with LEDs, and I once made a color-changing scarf.&lt;/p&gt;
+
+&lt;p&gt;So, I thought I’d fall madly in love with front-end development for some reason. It’s artistic and logical, right?&lt;/p&gt;
+
+&lt;p&gt;Apparently I’m not as wired for design as I thought I might be, or maybe web design, in particular, isn’t the right kind of logical for me. While I can envision a pipeline of information going from one program to another to put words on a screen, I often cannot picture exactly how something I do in HTML or CSS will affect what those words look like. Sure, there’s a &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt; that this text is theoretically going to sit in, but don’t ask me where that &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt; sits on the page.&lt;/p&gt;
+
+&lt;p&gt;Maybe it’s a matter of practice? Once I get into a good workflow and get a skeletal page put together, making the page pretty gets easier, but it just doesn’t flow yet. I’ll have to keep trying. Perhaps I’ll fiddle with my Liquid templates.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, there are several areas of web development that I feel much more excited about.&lt;/p&gt;
+
+&lt;h1 id=&quot;interfacing-components&quot;&gt;Interfacing Components&lt;/h1&gt;
+
+&lt;p&gt;Things got real at Hackbright when we started tinkering with a web framework called Flask. With Flask, you can use Python to make web pages talk to each other, and that feels amazing. For part of our homework this weekend, we built the bare beginnings of a simple web application, complete with form fields.&lt;/p&gt;
+
+&lt;p&gt;Here’s what a route to an HTML page on a website might look like in Flask:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@app.route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index_page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Shows an index page.&quot;&quot;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The first line is called a &lt;em&gt;decorator&lt;/em&gt;, which defines a route; in this case, &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; is the route being defined. The decorator syntax is a part of Flask, and if I’ve understood correctly, decorators actually represent some built-in function in the framework. The function after the decorator defines what should happen when someone accesses that route, say by clicking a hyperlink or submitting a form. Anyone accessing &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; will be served the page written in &lt;em&gt;index.html&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I find thinking about how best to link up pages on a website really fascinating, and debugging the connections can be a great puzzle to work through. (Debugging routes can also be frustrating–very frustrating. Working with Flask has reminded me of the value in just walking away for a little while.)&lt;/p&gt;
+
+&lt;h1 id=&quot;templating-all-the-things&quot;&gt;Templating All the Things&lt;/h1&gt;
+
+&lt;p&gt;We’ve also been learning how to generate HTML pages with Jinja, a Python templating engine that you can interface with Flask. The idea is that you can create a base template (or multiple bases, if you like) with placeholders that Jinja understands, and other pages on your site can inherit the characteristics of the base template. Then, when you render pages in Flask, Jinja will fill in the blanks! Plus, if you link up your CSS stylesheet inside your base template, the styles will be automatically applied to all pages that inherit from the base. SO. COOL.&lt;/p&gt;
+
+&lt;p&gt;A simple &lt;em&gt;base.html&lt;/em&gt; file might look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/jinja_base.png&quot; alt=&quot;Jinja&quot; title=&quot;Jinja-fied Base Template&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(Liquid really wanted to read these Jinja blocks so I had to screenshot the code.)&lt;/p&gt;
+
+&lt;p&gt;The blocks do what they say on the tin. the &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt; block is a placeholder for the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; section of an HTML page, the &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; block is a placeholder for any &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&lt;/code&gt; you might want to fill in, and so on. Jinja can also handle loops and if statements, and this code uses both to display any flash messages generated by the page previously visited.&lt;/p&gt;
+
+&lt;p&gt;With this base file, you could make an HTML file like this one that extends it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/jinja_extend.png&quot; alt=&quot;Jinja&quot; title=&quot;Jinja-fied HTML Page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Isn’t that lovely? It’s so much cleaner than cluttering your files with all the usual HTML tags, and it’s way more readable. Being able to supply content for those variables also lets you do really fun things, like templatizing (is that a word?) bulleted lists or tables as shown above. Just create a list of data in your Flask script, pass the list to Jinja when you render the template, and boom, you can throw down a ten-line table in half the HTML. Plus, you’ll never have to worry about adding extra lines manually.&lt;/p&gt;
+
+&lt;p&gt;Automation == &amp;lt;3&lt;/p&gt;
+
+&lt;h1 id=&quot;testing-and-documenting&quot;&gt;Testing and Documenting&lt;/h1&gt;
+
+&lt;p&gt;I know, I know, I’ve said it before. I’m into documentation, and testing with docstrings is awesome. We also learned about unit, integration, and functional testing in Python this week, though, and I just have to say, I’m looking forward to writing tests for my big project once I get started. I’m still not sure how I feel about the idea of test-driven development (I’ll have to try it at some point), but I see merit and sense in knowing how to write good tests. I’ll have to start using &lt;code class=&quot;highlighter-rouge&quot;&gt;unittest&lt;/code&gt; on my homework or maybe cook up a personal project to get some experience.&lt;/p&gt;
+
+&lt;h1 id=&quot;knowing-how-and-why-systems-work&quot;&gt;Knowing How and Why Systems Work&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 24 Jul 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/programming/2016/07/24/Strengths-and-Interests.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/programming/2016/07/24/Strengths-and-Interests.html</guid>
+        
+        
+        <category>Programming</category>
+        
+      </item>
     
       <item>
         <title>Doodles for Comprehension</title>
@@ -20,7 +87,7 @@
 
 &lt;p&gt;We had our first few lectures on object-oriented programming. Talking about the differences between functions and methods inspired this little doodle.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/ListMethodsFunctions.png&quot; alt=&quot;Methods and Functions&quot; title=&quot;Methods and Functions&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/ListMethodsFunctions.png&quot; alt=&quot;Methods and Functions&quot; title=&quot;Methods and Functions&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In case the little characters didn’t get the point across, one way to remember when you’re using a method and when you’re using a function is if you can ask the object to do something to itself. In that case, you’re dealing with a method. If you’re asking Python to do something and passing the object as a parameter, you’re using a function.&lt;/p&gt;
 
@@ -28,31 +95,31 @@
 
 &lt;p&gt;Coming from C-landia, this was one of the strangest things for me to grok about languages like Python. If I don’t tell you what my variable is, how will you know how much space to reserve? And why would I even want to change the type of my variable’s contents midway through a program? Ahhh!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/LooseTypes.png&quot; alt=&quot;Loosely Typed&quot; title=&quot;Loosely Typed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/LooseTypes.png&quot; alt=&quot;Loosely Typed&quot; title=&quot;Loosely Typed&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;But everything seems to work out in the end. I can see now that it is possible to not know whether the user will give you a string or a number and not end up with a program that breaks–you just have to handle the input appropriately. I’ve also just come to accept and enjoy the fact that I don’t have to program it quite so rigid a structure as I used to.&lt;/p&gt;
+&lt;p&gt;But everything seems to work out in the end. I can see now that it is possible to not know whether the user will give you a string or a number and not end up with a program that breaks–you just have to handle the input appropriately. I’ve also just come to accept and enjoy the fact that I don’t have to program in quite so rigid a structure as I used to.&lt;/p&gt;
 
 &lt;h1 id=&quot;for-good-style-and-sanity-dont-mix-tabs-and-spaces&quot;&gt;For Good Style and Sanity, Don’t Mix Tabs and Spaces&lt;/h1&gt;
 
 &lt;p&gt;In Python, indentation matters. It’s the only way your code blocks get set apart from each other. Apparently, it’s typical for Python programs to use four spaces as the standard indent amount, rather than using a single tab. But whatever your code base uses, just don’t mix the two, or you’ll cause headaches for everyone.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/tabs.png&quot; alt=&quot;Tabs and Spaces&quot; title=&quot;Tabs and Spaces&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/tabs.png&quot; alt=&quot;Tabs and Spaces&quot; title=&quot;Tabs and Spaces&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Nothing should actually explode, but people may get upset with you if their indentation goes sideways because you started using tabs instead of spaces.&lt;/p&gt;
+&lt;p&gt;Nothing should actually explode, but people may get upset with you if their program goes sideways due to indentation errors because you started using tabs instead of spaces.&lt;/p&gt;
 
 &lt;h1 id=&quot;dont-freak-out--try-it-out&quot;&gt;Don’t Freak Out–Try It Out!&lt;/h1&gt;
 
 &lt;p&gt;One of my favorite aspects of Python is the fact that you can just try something out when you’re not sure what it does. Confused about a method? Got a file full of classes and just want to play with them? Crack open that Python console and go to town.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/pythonspace.png&quot; alt=&quot;Python SPACE!!&quot; title=&quot;Now entering the Python space...&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/pythonspace.png&quot; alt=&quot;Python SPACE!!&quot; title=&quot;Now entering the Python space...&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I’ve really enjoyed using bpython instead of standard Python lately. It has tab completion and syntax highlighting!&lt;/p&gt;
+&lt;p&gt;I’ve really enjoyed using &lt;code class=&quot;highlighter-rouge&quot;&gt;bpython&lt;/code&gt; instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; program lately. It has tab completion and syntax highlighting!&lt;/p&gt;
 
 &lt;h1 id=&quot;still-stuck&quot;&gt;Still Stuck?&lt;/h1&gt;
 
 &lt;p&gt;Finally, one of my personal favorites–if you’re still stuck after playing around in the console…&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/readthedocs.png&quot; alt=&quot;Read the Docs&quot; title=&quot;Read the Docs!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/readthedocs.png&quot; alt=&quot;Read the Docs&quot; title=&quot;Read the Docs!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Because dense as they are, they’re at least a good pivot for asking questions intelligently elsewhere, or finding a good tutorial on a particular use for a method, function, class, and so on.&lt;/p&gt;
 </description>
@@ -93,7 +160,7 @@ More detailed explanations can go after a blank line.
 You can include example code for Python to use to test your program, too, 
 like this:
 
-&amp;gt;&amp;gt;&amp;gt;call_function(argument)
+&amp;gt;&amp;gt;&amp;gt; call_function(argument)
 &quot;Put the expected output here! :)&quot;
 
 &quot;&quot;&quot;&lt;/span&gt;
@@ -102,7 +169,7 @@ like this:
 
 &lt;p&gt;The beautiful thing about docstrings is that they generate documentation for you. Everything you put in a docstring appears in the Python console if someone calls &lt;code class=&quot;highlighter-rouge&quot;&gt;help()&lt;/code&gt; and passes the name of your function. So if you make a function called &lt;code class=&quot;highlighter-rouge&quot;&gt;helpful_function()&lt;/code&gt; and include a docstring, a user could enter the following in the Python console to access your explanation:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;helpful_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;helpful_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;And they’d see something like this:&lt;/p&gt;
 
