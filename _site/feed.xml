@@ -6,8 +6,8 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Jul 2016 00:05:09 -0700</pubDate>
-    <lastBuildDate>Mon, 25 Jul 2016 00:05:09 -0700</lastBuildDate>
+    <pubDate>Mon, 25 Jul 2016 22:29:01 -0700</pubDate>
+    <lastBuildDate>Mon, 25 Jul 2016 22:29:01 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -72,7 +72,7 @@
 
 &lt;h1 id=&quot;knowing-how-and-why-systems-work&quot;&gt;Knowing How and Why Systems Work&lt;/h1&gt;
 
-&lt;p&gt;Ultimately, what I realized while I was thinking about everything I enjoyed about this week is that at my core, my favorite part of computer engineering is knowing the how and the why of a system I’m working in. I like to know how pages communicate, and there’s no better way to know that than by routing the connections yourself. It’s also very satisfying to look at a block of text on a page and know exactly how certain pieces of it got from the user’s input to being displayed in the browser. One of our assignments this week taught us roughly how a shopping cart might work, using sessions, and it totally blew my mind.&lt;/p&gt;
+&lt;p&gt;Ultimately, what I realized while I was thinking about everything I enjoyed about this week is that my favorite part of computer engineering is still knowing the how and the why of a system I’m creating or maintaining. I need to know why a system should work the way it does to begin to understand it. I like to know how pages communicate, and there’s no better way to know that than by routing the connections yourself. It’s also very satisfying to look at a block of text on a page and know exactly how certain pieces of it got from the user’s input to being displayed in the browser. One of our assignments this week taught us roughly how a shopping cart might work, using sessions, and it totally blew my mind.&lt;/p&gt;
 
 &lt;p&gt;I don’t need to be the one making pages pretty, though. Give me your gorgeous pages, tell me what data you want to display on them, and I’ll be happy to (try to) make them into a running web application.&lt;/p&gt;
 
