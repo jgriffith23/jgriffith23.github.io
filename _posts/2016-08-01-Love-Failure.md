@@ -125,13 +125,9 @@ that my route names in my HTML files actually match the route names in my server
 application correctly. If you have a link in HTML that tries to send a user to a
 route that doesn't exist, you'll never be able to reach that route! 
 
-Typos are apparently the bane of my existence, both in editing and in programming. 
-I guess that's an exaggeration, but they are pretty high up there in terms of 
-frustration. Ironically, typos are worse to me when I'm programming
-than they are when I'm editing! At least typos that get past developmental edits
-will get caught by a copyeditor or proofreader; in code, unless you're pair 
-programming, there's no one to check your work but you. And a typo won't break a
-book, even if it is embarrassing when one slips through. 
+Ironically, typos are worse to me when I'm programming than they are when I'm 
+editing! At least typos that get past developmental edits will get caught by a copyeditor or proofreader; in code, unless you're pair programming, there's no one to check your 
+work but you. And a typo won't break a book, even if it is embarrassing when one slips through. 
 
 # Are You Working in the Environment You Think You Are?
 
