@@ -187,9 +187,10 @@ Confession time--
 
 The title of this post is more aspirational than truthful. I definitely still
 worry about failing, but Hackbright is doing an amazing job of convincing me
-that failing is perfectly acceptable, even encouraged (to an extent). Everyone here is so 
-supportive and smart, and no one looks down on you for having a bug, even if 
-it's silly. If anything, one of the staff will say, "Oh, let me tell you about 
+that failing is perfectly acceptable, even encouraged (to an extent, anyway; in a job,
+your code *will* have to work eventually, according to someone else's timeline). 
+Everyone here is so supportive and smart, and no one looks down on you for having a bug, 
+even if it's silly. If anything, one of the staff will say, "Oh, let me tell you about 
 a time I had the same bug!" 
 
 Either way, the staff are all brilliant at guiding you to solving problems 
