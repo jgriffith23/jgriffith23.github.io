@@ -125,9 +125,9 @@ that my route names in my HTML files actually match the route names in my server
 application correctly. If you have a link in HTML that tries to send a user to a
 route that doesn't exist, you'll never be able to reach that route! 
 
-Ironically, typos are worse to me when I'm programming than they are when I'm 
-editing! At least typos that get past developmental edits will get caught by a copyeditor or proofreader; in code, unless you're pair programming, there's no one to check your 
-work but you. And a typo won't break a book, even if it is embarrassing when one slips through. 
+Interestingly, typos are worse to me when I'm programming than they are when I'm 
+editing. At least typos that get past developmental edits should get caught by a copyeditor or proofreader; in code, unless you're pair programming, there's no one to check your 
+work but you. And a typo won't break a book. 
 
 # Are You Working in the Environment You Think You Are?
 
@@ -146,6 +146,11 @@ When you install packages from another person's requirements file, if the projec
 doesn't run out the gate, don't panic. Check that requirements file, and make sure
 all the modules your code relies on are actually listed there. If a module is 
 missing, then install it manually and recreate the requirements file. 
+
+Having the right modules isn't the only potential source of error in this 
+category, though. It's also entirely possible to work away on a file and not
+find out you've been tweaking the wrong file until you try to run your upgrades
+and nothing's different.
 
 Programs with tab functionality rock. Browser tabs, text editor tabs, terminal
 tabs--they're great. Just one small drawback: when you get too many tabs open,
@@ -182,12 +187,12 @@ Confession time--
 
 The title of this post is more aspirational than truthful. I definitely still
 worry about failing, but Hackbright is doing an amazing job of convincing me
-that failing is perfectly acceptable, even encouraged. Everyone here is so 
+that failing is perfectly acceptable, even encouraged (to an extent). Everyone here is so 
 supportive and smart, and no one looks down on you for having a bug, even if 
 it's silly. If anything, one of the staff will say, "Oh, let me tell you about 
 a time I had the same bug!" 
 
-Either way, the staff here are all brilliant at guiding you to solving problems 
+Either way, the staff are all brilliant at guiding you to solving problems 
 yourself, rather than just solving them for you and leaving you mystified. 
 That's one of the best things about Hackbright--they teach us to think
 through problems, not just memorize everything. The solution may not always be 
