@@ -6,9 +6,221 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Jul 2016 22:48:41 -0700</pubDate>
-    <lastBuildDate>Mon, 25 Jul 2016 22:48:41 -0700</lastBuildDate>
+    <pubDate>Tue, 02 Aug 2016 00:08:47 -0700</pubDate>
+    <lastBuildDate>Tue, 02 Aug 2016 00:08:47 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Coding Bootcamp (Or, How I Learned to Stop Worrying and Love Failure)</title>
+        <description>&lt;p&gt;Failure is frustrating and often feels unfair, but it’s also one of the most effective 
+teachers I’ve ever had, both in life and in programming.&lt;/p&gt;
+
+&lt;p&gt;“Fail fast” is a common saying in tech for good reason. I can write working code 
+all day and have to look up the same patterns later, but throw a bug in my path, 
+and I’ll remember how to avoid it next time. My pair programming partners 
+and I have had some pretty good “failures” that taught me some important questions to 
+ask myself whenever a program goes sideways.&lt;/p&gt;
+
+&lt;h1 id=&quot;is-that-thing-really-what-you-think-it-is&quot;&gt;Is That Thing &lt;em&gt;Really&lt;/em&gt; What You Think It Is?&lt;/h1&gt;
+
+&lt;p&gt;An application I was working on last week could fetch multiple rows of data from a database and store
+those rows as a list of tuples. In an effort to automate some Jinja templating and display
+that data, my pair programming partner and I did something like the loop in the code below:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;oh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;em&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;gee&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;double-u&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tee&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;eff&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bee&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bee&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;omgwtfbbq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;omgwtfbbq&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;oh&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;em&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;gee&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;double-u&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;tee&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;eff&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;bee&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;bee&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;cue&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nym&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;omgwtfbbq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ac&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ro&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nym&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;oh&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gee&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tee&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bee&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bee&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cue&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This code creates tuples representing some phonetic-ish spellings 
+for three acronyms and plops them into a list. Each iteration of the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loop grabs the next tuple, unpacks it into three variables, and prints the
+value of each variable to say something incoherent.&lt;/p&gt;
+
+&lt;p&gt;Our loop did the job so well and with so few lines of code that the next time we 
+needed to display a row of data from the database, we knew exactly what to do. Just
+unpack it in a &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loop!&lt;/p&gt;
+
+&lt;p&gt;Well, that didn’t work. We scoured our code, Googled all the (relevant) things, 
+and checked our routes. We tested our process in the console. There were no typos, 
+unpacking worked the way we thought, and we could access all of our pages just fine.&lt;/p&gt;
+
+&lt;p&gt;Turns out we had a big case of “that thing is not what you think it is.” The 
+application we were modifying actually gave us single rows from the database as
+single tuples, &lt;em&gt;not&lt;/em&gt; lists of tuples. Oops.&lt;/p&gt;
+
+&lt;p&gt;This is roughly what was happening:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;is a tuple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+&lt;span class=&quot;n&quot;&gt;Traceback&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;most&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;recent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;pyshell#7&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;ValueError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;too&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;many&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unpack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remember how strings are lists? Well, this &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loop tries to unpack every string 
+as its component characters. Because y’know, the strings are lists. It’s trying to
+do exactly what the previous &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loop did, but there just aren’t enough variables
+for it to unpack all those characters into.&lt;/p&gt;
+
+&lt;p&gt;We figured this out by talking our problem through with one of our amazing instructors 
+and by printing the output from both data fetching operations to the screen. Once we
+knew what we were actually working with, getting the data to display without errors was easy.&lt;/p&gt;
+
+&lt;p&gt;And now I’ll never forget how unpacking works–or perhaps more importantly, I’ll never
+forget to actually confirm my data types.&lt;/p&gt;
+
+&lt;p&gt;Probably. Most of the time.&lt;/p&gt;
+
+&lt;p&gt;In a sentence: Before you begin coding, be aware of the nature of your data.&lt;/p&gt;
+
+&lt;h1 id=&quot;are-you-going-where-you-think-youre-going&quot;&gt;Are You Going Where You Think You’re Going?&lt;/h1&gt;
+
+&lt;p&gt;The best-planned program’s execution path can be totally different from
+what you intended it to be if there’s a bug in your code. How perfect
+your loop or if statement is doesn’t matter if execution never lands inside that
+block.&lt;/p&gt;
+
+&lt;p&gt;I’ve run into this issue enough now that sometimes even before a program starts
+misbehaving, I’ll throw down a print statement inside a loop just to have the 
+console tell me “Hey, I’m inside that awesome for loop!” (Don’t judge. Complimenting
+your own code might just brighten your day, too.)&lt;/p&gt;
+
+&lt;p&gt;Printing debug statements has been especially handy now that we’re using JavaScript, 
+because JavaScript code seems to involve a lot of callbacks. A &lt;em&gt;callback function&lt;/em&gt;,
+also called an &lt;em&gt;event handler&lt;/em&gt;, is a function that gets executed in response to an event.
+In the browser, those events include clicks, key presses, and so on. You can add
+an &lt;em&gt;event listener&lt;/em&gt; to an HTML element (like a button), and the event listener 
+actually tells JavaScript which callback to run when an event happens to the element.&lt;/p&gt;
+
+&lt;p&gt;The whole system of events, event listeners, and callbacks is fun to play with (it’s
+like using interrupts in hardware land &amp;lt;3), but it can be frustrating too. If you
+click a button you’ve placed an event listener on and nothing happens, maybe there’s
+an error in your callback–but maybe you’re never actually reaching the callback
+in the first place.&lt;/p&gt;
+
+&lt;p&gt;I’ve found the latter to be my issue often enough that every time I write a callback now,
+I plan to include a &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; statement until the code is finalized so I have
+some indication that the callback even happened.&lt;/p&gt;
+
+&lt;p&gt;In a more literal situation, last week also reminded me yet again to make doubly sure
+that my route names in my HTML files actually match the route names in my server
+application correctly. If you have a link in HTML that tries to send a user to a
+route that doesn’t exist, you’ll never be able to reach that route!&lt;/p&gt;
+
+&lt;p&gt;Typos are apparently the bane of my existence, both in editing and in programming. 
+I guess that’s an exaggeration, but they are pretty high up there in terms of 
+frustration. Ironically, typos are worse to me when I’m programming
+than they are when I’m editing! At least typos that get past developmental edits
+will get caught by a copyeditor or proofreader; in code, unless you’re pair 
+programming, there’s no one to check your work but you. And a typo won’t break a
+book, even if it is embarrassing when one slips through.&lt;/p&gt;
+
+&lt;h1 id=&quot;are-you-working-in-the-environment-you-think-you-are&quot;&gt;Are You Working in the Environment You Think You Are?&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Related question: Are you actually importing the modules you think you’re
+importing?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If the first rule of tech support is “check whether the machine is plugged in,” 
+then this question definitely belongs in every debugging checklist.&lt;/p&gt;
+
+&lt;p&gt;In Python, it’s really helpful to create a virtual environment for a project 
+you’re working on, so you can export the package requirements for easy installation 
+with &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt; later. Just remember to activate your environment next time you work on 
+the project, or you might not have the right version of, well, anything.&lt;/p&gt;
+
+&lt;p&gt;When you install packages from another person’s requirements file, if the project
+doesn’t run out the gate, don’t panic. Check that requirements file, and make sure
+all the modules your code relies on are actually listed there. If a module is 
+missing, then install it manually and recreate the requirements file.&lt;/p&gt;
+
+&lt;p&gt;Programs with tab functionality rock. Browser tabs, text editor tabs, terminal
+tabs–they’re great. Just one small drawback: when you get too many tabs open,
+the titles shrink. When you’re editing documents, that might mean you can’t read
+the filename anymore. (At that point, maybe you’ve gone overboard with the tabs, 
+but that’s a separate issue…)&lt;/p&gt;
+
+&lt;p&gt;That’s not a big deal if you’re editing files that look completely different. But 
+if for some reason you have, say, two different CSS stylesheets open that have very
+similar information in them, then mixing them up is entirely too easy. And yes, 
+I know this from experience. I’m not even embarrassed: I learned a valuable
+lesson!&lt;/p&gt;
+
+&lt;h1 id=&quot;are-you-missing-a-syntax-element&quot;&gt;Are You Missing a [Syntax Element]?&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Related question: Do you have a [syntax element] that doesn’t belong?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When I started learning Python, I wanted to treat &lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt; like a function and use
+parentheses. We’re learning Python 2; apparently, I was just anticipating Python 3. I also 
+had to break myself from using semicolons everywhere and teach myself to use indentation
+instead of curly braces to indicate block scope.&lt;/p&gt;
+
+&lt;p&gt;Then, Hackbright sent us to JavaScript Land, where I had to unlearn everything I
+overwrote in my muscle memory. Now, I keep trying to end statements with semicolons
+in Python and use colons after &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statements and the openings of &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loops in
+JavaScript.&lt;/p&gt;
+
+&lt;p&gt;Mixing up syntax on occasion is just a consequence of knowing multiple languages,
+and I’ll happily accept it. Hooray for error messages!&lt;/p&gt;
+
+&lt;h1 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h1&gt;
+
+&lt;p&gt;Confession time–&lt;/p&gt;
+
+&lt;p&gt;The title of this post is more aspirational than truthful. I definitely still
+worry about failing, but Hackbright is doing an amazing job of convincing me
+that failing is perfectly acceptable, even encouraged. Everyone here is so 
+supportive and smart, and no one looks down on you for having a bug, even if 
+it’s silly. If anything, one of the staff will say, “Oh, let me tell you about 
+a time I had the same bug!”&lt;/p&gt;
+
+&lt;p&gt;Either way, the staff here are all brilliant at guiding you to solving problems 
+yourself, rather than just solving them for you and leaving you mystified. 
+That’s one of the best things about Hackbright–they teach us to think
+through problems, not just memorize everything. The solution may not always be 
+the same, but you can apply a good process for problem solving to just about any
+bug you encounter.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Relevant Quotes:&lt;/p&gt;
+
+  &lt;p&gt;“Make sure you’re actually getting to the place you think you’re getting to!”
+–Meggie&lt;/p&gt;
+
+  &lt;p&gt;“The first solution isn’t always the best, but if it works, try it.
+ Then refactor your code.”
+–A fellow Hackbrighter whose name I didn’t write down… &amp;gt;.&amp;lt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Mon, 01 Aug 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/programming/2016/08/01/Love-Failure.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/programming/2016/08/01/Love-Failure.html</guid>
+        
+        
+        <category>Programming</category>
+        
+      </item>
     
       <item>
         <title>Templating and Interfacing Web Pages is Awesome</title>
