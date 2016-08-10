@@ -33,7 +33,7 @@ def index_page():
     return render_template("index.html")
 {% endhighlight %}
 
-The first line is called a *decorator*, which defines a route; in this case, `/` is the route being defined. The decorator syntax is a part of Flask, and if I've understood correctly, decorators actually represent some built-in function in the framework. The function after the decorator defines what should happen when someone accesses that route, say by clicking a hyperlink or submitting a form. Anyone accessing `/` will be served the page written in *index.html*. 
+The first line is called a *decorator*, which defines a route; in this case, `/` is the route being defined. The decorator syntax is a really cool part of Python; if I've understood correctly, a decorator is actually sort of wrapper that changes the behavior of another function without modifying the function itself, which allows you to generate new functions. (Yo dawg, I heard you like functions...) The function after the decorator defines what should happen when someone accesses that route, say by clicking a hyperlink or submitting a form. Anyone accessing `/` will be served the page written in *index.html*. 
 
 I find thinking about how best to link up pages on a website really fascinating, and debugging the connections can be a great puzzle to work through. (Debugging routes can also be frustrating--very frustrating. Working with Flask has reminded me of the value in just walking away for a little while.)
 
