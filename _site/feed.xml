@@ -6,9 +6,139 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Aug 2016 00:08:47 -0700</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2016 00:08:47 -0700</lastBuildDate>
+    <pubDate>Mon, 22 Aug 2016 22:31:11 -0700</pubDate>
+    <lastBuildDate>Mon, 22 Aug 2016 22:31:11 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Halfway Through My First Project Sprint</title>
+        <description>&lt;p&gt;At Hackbright, we’re halfway through our first sprint of project time. We’ve all spent the last two weeks working like crazy to get a minimum viable project off the ground, and as part of our homework this past weekend, we were asked to take some time to reflect.&lt;/p&gt;
+
+&lt;p&gt;Several of the reflection prompts we received to write on were very much in line with thoughts I wanted to share here, so I figured I’d just share some of those now.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-inspired-you-to-do-this-project&quot;&gt;What inspired you to do this project?&lt;/h1&gt;
+
+&lt;p&gt;I’m building a personal craft supply inventory tool, where users can log their supplies, monitor their inventory, and see how many supplies they need to build a project. I was inspired to build this app after asking myself two questions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What problems do I have on a regular basis that I could solve by writing a program?&lt;/li&gt;
+  &lt;li&gt;Is there a program out there that solves a similar problem that I could look to as a model?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I love arts and crafts, so my answer to Question 1 came pretty quickly. I have a giant box and a big old shelf of craft supplies that are semi-organized, but I honestly have no idea what supplies I actually own. I’d love to be able to just go through them once, catalog them, and create an inventory.&lt;/p&gt;
+
+&lt;p&gt;I also tend to just rebuy craft supplies when I want to do a new project, only to discover later that I didn’t need to buy them at all. If I had a program that could look at my inventory and tell me how many supplies I need to build something, I could avoid that issue.&lt;/p&gt;
+
+&lt;p&gt;Once I knew I wanted to build a personal supply inventory, I realized I already use a personal inventory tool called Deckbox to catalog a very different hobby item–my Magic cards. Deckbox has a lot of features similar to what I wanted for my craft inventory, so I got a lot of inspiration from there. The ability to search and filter your inventory on multiple columns is very much inspired by Deckbox.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-part-of-the-technology-interested-you&quot;&gt;What part of the technology interested you?&lt;/h1&gt;
+
+&lt;p&gt;From the start, I wanted to create an application where most of the business logic happens on the server and the front end mostly has to worry about submitting data, asking for data, and displaying it, not making big decisions. I really like Python, so I wanted to write a lot of it.&lt;/p&gt;
+
+&lt;p&gt;The first time we touched databases at Hackbright, I knew my app was going to revolve around them, too. Databases are fascinating! I was very interested in creating a data model (I’m very proud of mine), designing my system, and being able to display my data in a variety of ways.&lt;/p&gt;
+
+&lt;p&gt;I also wanted to get out of my comfort zone and make sure some of my features relied on JavaScript. We didn’t get as much time with JavaScript in the regular curriculum, but I wanted some features (like inventory filtering) to be able to change the page appearance without reloading the entire page. As such, I made sure to try using jQuery and AJAX, and I’m glad I did! I think JavaScript and I have reached a truce.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-are-the-different-elements-of-your-project-and-how-did-you-structure-your-project&quot;&gt;What are the different elements of your project, and how did you structure your project?&lt;/h1&gt;
+
+&lt;p&gt;My project revolves around tracking two types of information:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The supplies a user owns&lt;/li&gt;
+  &lt;li&gt;The supplies needed for a project a user wants to build&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;My ultimate goal for the first sprint was to be able to tell a user exactly what supplies they own and how many supplies they would need to buy to build a project in the app’s database. (Of course, that relies on the user giving accurate data; how well a user wants to keep their inventory up-to-date isn’t for me or my app to decide, however.)&lt;/p&gt;
+
+&lt;p&gt;To that end, here’s how I’ve structured my project so far, in terms of data and page connections.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-data-model&quot;&gt;The Data Model&lt;/h2&gt;
+
+&lt;p&gt;My database has five tables, which work together to represent all supplies my app’s users own, all supplies in projects my users want to build, and the details about those supplies.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/CraftersClosetDataModel.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This data model shows the following relationships:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A user can have many projects, but each project is owned by only one user.&lt;/li&gt;
+  &lt;li&gt;A user can have many items in their inventory, and each item has a particular set of details attached to it.&lt;/li&gt;
+  &lt;li&gt;The set of details that embodies a particular supply can apply to many items owned by users.&lt;/li&gt;
+  &lt;li&gt;A project can have many supplies associated with it.&lt;/li&gt;
+  &lt;li&gt;The set of details that embodies a particular supply can apply to many supplies required by projects.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Determining exactly what the relationships between users, projects, and inventories should be was a really fun and interesting problem to solve. Thanks to some top-notch advising (Lavinia, you’re the best!), I realized that it would make sense to separate the “idea” of a supply from the information specific to users and projects. From there, we determined that projects and supplies actually have a similar relationship to the one between users and supplies.&lt;/p&gt;
+
+&lt;h2 id=&quot;site-pages-and-connections&quot;&gt;Site Pages and Connections&lt;/h2&gt;
+&lt;p&gt;When a user first arrives at my homepage, they see a landing page where they can search for projects other users have created, register, or authenticate. On registration, a user is authenticated automatically.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/LandingPage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The screenshot above shows the landing page after a user deauthenticated.&lt;/p&gt;
+
+&lt;p&gt;I’ll take you on a little tour of the application so far, but try to ignore the actual data. Some of it is…creative. I blame the debugging process.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-dashboard&quot;&gt;The Dashboard&lt;/h3&gt;
+&lt;p&gt;On authentication, a user is taken to the dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/Dashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the dashboard, a user can filter their inventory view…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/InventoryFilter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Or search their inventory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/SearchInventory.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Users can also add supplies to their inventory from their dashboard by clicking “Add a Supply!” and submitting the form in the modal window that appears on click.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/AddSupply.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As the full dashboard screenshot below shows, users can also view a list of their projects from the dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/FullDashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;project-pages&quot;&gt;Project Pages&lt;/h3&gt;
+
+&lt;p&gt;From the dashboard, a user can choose to create a new project. Clicking “Create a New Project” takes the user to a new page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/ProjectCreationPage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This page lets users give a title, description, and a link to a tutorial. The “Add a Supply to This Project” button generates a form with the same fields as the “Add Supply” form when pressed. A user just has to enter the supply details in the forms they generate to specify the supplies associated with the project.&lt;/p&gt;
+
+&lt;p&gt;Once a user presses “Create Project,” the project is added to the database and the user is taken to the project’s landing page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/NewProjectPage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Project pages tell authenticated users how much of a required supply they need to buy to make a project. In this example, the authenticated user (not necessarily jhacks, the project creator) doesn’t own either of the supplies required for this project, so they have to buy the full amount.&lt;/p&gt;
+
+&lt;h3 id=&quot;okay-so-wheres-the-javascript&quot;&gt;Okay, so where’s the JavaScript?&lt;/h3&gt;
+
+&lt;p&gt;In terms of fetching and processing data for all these pages, Python does the heavy lifting. But JavaScript was key to getting the project search, inventory search, and inventory filter features working according to my vision. I wanted to only change those tables when the user requested a new view, rather than rerender the whole page. That process looks something like this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AJAX sends a request to the server containing the search/filter parameters.&lt;/li&gt;
+  &lt;li&gt;The appropriate Flask route calls a helper function to fetch the appropriate data and process it accordingly.&lt;/li&gt;
+  &lt;li&gt;Flask renders the HTML to be replaced.&lt;/li&gt;
+  &lt;li&gt;Flask passes the HTML back to JavaScript, via AJAX.&lt;/li&gt;
+  &lt;li&gt;JavaScript plops the new HTML onto the page in a conveniently placed &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; element.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Perhaps in my second sprint, I’ll try letting JavaScript do more work, but for now these features are functional. If it ain’t broke…&lt;/p&gt;
+
+&lt;h1 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h1&gt;
+&lt;p&gt;That’s my app so far! It’s still rough around the edges, but it’s mine, and I’m enjoying the work. I’ll have a couple more blog posts coming up where I discuss challenges and look ahead to the rest of our second sprint.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Aug 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/hackbright/2016/08/22/End-Of-First-Sprint.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/hackbright/2016/08/22/End-Of-First-Sprint.html</guid>
+        
+        
+        <category>hackbright</category>
+        
+      </item>
     
       <item>
         <title>Coding Bootcamp (Or, How I Learned to Stop Worrying and Love Failure)</title>
@@ -128,13 +258,9 @@ that my route names in my HTML files actually match the route names in my server
 application correctly. If you have a link in HTML that tries to send a user to a
 route that doesn’t exist, you’ll never be able to reach that route!&lt;/p&gt;
 
-&lt;p&gt;Typos are apparently the bane of my existence, both in editing and in programming. 
-I guess that’s an exaggeration, but they are pretty high up there in terms of 
-frustration. Ironically, typos are worse to me when I’m programming
-than they are when I’m editing! At least typos that get past developmental edits
-will get caught by a copyeditor or proofreader; in code, unless you’re pair 
-programming, there’s no one to check your work but you. And a typo won’t break a
-book, even if it is embarrassing when one slips through.&lt;/p&gt;
+&lt;p&gt;Interestingly, typos are worse to me when I’m programming than they are when I’m 
+editing. At least typos that get past developmental edits should get caught by a copyeditor or proofreader; in code, unless you’re pair programming, there’s no one to check your 
+work but you. And a typo won’t break a book.&lt;/p&gt;
 
 &lt;h1 id=&quot;are-you-working-in-the-environment-you-think-you-are&quot;&gt;Are You Working in the Environment You Think You Are?&lt;/h1&gt;
 
@@ -153,6 +279,11 @@ the project, or you might not have the right version of, well, anything.&lt;/p&g
 doesn’t run out the gate, don’t panic. Check that requirements file, and make sure
 all the modules your code relies on are actually listed there. If a module is 
 missing, then install it manually and recreate the requirements file.&lt;/p&gt;
+
+&lt;p&gt;Having the right modules isn’t the only potential source of error in this 
+category, though. It’s also entirely possible to work away on a file and not
+find out you’ve been tweaking the wrong file until you try to run your upgrades
+and nothing’s different.&lt;/p&gt;
 
 &lt;p&gt;Programs with tab functionality rock. Browser tabs, text editor tabs, terminal
 tabs–they’re great. Just one small drawback: when you get too many tabs open,
@@ -189,12 +320,13 @@ and I’ll happily accept it. Hooray for error messages!&lt;/p&gt;
 
 &lt;p&gt;The title of this post is more aspirational than truthful. I definitely still
 worry about failing, but Hackbright is doing an amazing job of convincing me
-that failing is perfectly acceptable, even encouraged. Everyone here is so 
-supportive and smart, and no one looks down on you for having a bug, even if 
-it’s silly. If anything, one of the staff will say, “Oh, let me tell you about 
+that failing is perfectly acceptable, even encouraged (to an extent, anyway; in a job,
+your code &lt;em&gt;will&lt;/em&gt; have to work eventually, according to someone else’s timeline). 
+Everyone here is so supportive and smart, and no one looks down on you for having a bug, 
+even if it’s silly. If anything, one of the staff will say, “Oh, let me tell you about 
 a time I had the same bug!”&lt;/p&gt;
 
-&lt;p&gt;Either way, the staff here are all brilliant at guiding you to solving problems 
+&lt;p&gt;Either way, the staff are all brilliant at guiding you to solving problems 
 yourself, rather than just solving them for you and leaving you mystified. 
 That’s one of the best things about Hackbright–they teach us to think
 through problems, not just memorize everything. The solution may not always be 
@@ -250,7 +382,7 @@ bug you encounter.&lt;/p&gt;
 
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;The first line is called a &lt;em&gt;decorator&lt;/em&gt;, which defines a route; in this case, &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; is the route being defined. The decorator syntax is a part of Flask, and if I’ve understood correctly, decorators actually represent some built-in function in the framework. The function after the decorator defines what should happen when someone accesses that route, say by clicking a hyperlink or submitting a form. Anyone accessing &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; will be served the page written in &lt;em&gt;index.html&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The first line is called a &lt;em&gt;decorator&lt;/em&gt;, which defines a route; in this case, &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; is the route being defined. The decorator syntax is a really cool part of Python; if I’ve understood correctly, a decorator is actually sort of wrapper that changes the behavior of another function without modifying the function itself, which allows you to generate new functions. (Yo dawg, I heard you like functions…) The function after the decorator defines what should happen when someone accesses that route, say by clicking a hyperlink or submitting a form. Anyone accessing &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; will be served the page written in &lt;em&gt;index.html&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I find thinking about how best to link up pages on a website really fascinating, and debugging the connections can be a great puzzle to work through. (Debugging routes can also be frustrating–very frustrating. Working with Flask has reminded me of the value in just walking away for a little while.)&lt;/p&gt;
 
