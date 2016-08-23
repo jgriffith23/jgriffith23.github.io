@@ -7,7 +7,7 @@ categories: hackbright
 
 At Hackbright, we're halfway through our first sprint of project time. We've all spent the last two weeks working like crazy to get a minimum viable project off the ground, and as part of our homework this past weekend, we were asked to take some time to reflect.
 
-Several of the reflection prompts we received to write on were very much in line with thoughts I wanted to share here, so I figured I'd just share some of those now.
+Several of the reflection prompts we received to write on were very much in line with thoughts I wanted to blog about here anyway, so I figured I'd just share some of those now.
 
 # What inspired you to do this project?
 
