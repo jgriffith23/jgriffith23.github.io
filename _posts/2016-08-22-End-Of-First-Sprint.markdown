@@ -65,35 +65,35 @@ I'll take you on a little tour of the application so far, but try to ignore the 
 ### The Dashboard
 On authentication, a user is taken to the dashboard.
 
-![](CraftersClosetPlanning/EarlyScreenshots/Dashboard.png)
+![](https://github.com/jgriffith23/jgriffith23.github.io/blob/master/assets/CC-early-screens/Dashboard.png?raw=true)
 
 From the dashboard, a user can filter their inventory view...
 
-![](CraftersClosetPlanning/EarlyScreenshots/InventoryFilter.png)
+![](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/InventoryFilter.PNG)
 
 Or search their inventory.
 
-![](CraftersClosetPlanning/EarlyScreenshots/SearchInventory.png)
+![](https://github.com/jgriffith23/jgriffith23.github.io/blob/master/assets/CC-early-screens/SearchInventory.PNG?raw=true)
 
 Users can also add supplies to their inventory from their dashboard by clicking "Add a Supply!" and submitting the form in the modal window that appears on click.
 
-![](CraftersClosetPlanning/EarlyScreenshots/AddSupply.png)
+![](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/AddSupply.PNG)
 
 As the full dashboard screenshot below shows, users can also view a list of their projects from the dashboard.
 
-![](CraftersClosetPlanning/EarlyScreenshots/FullDashboard.png)
+![](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/FullDashboard.PNG)
 
 ### Project Pages
 
 From the dashboard, a user can choose to create a new project. Clicking "Create a New Project" takes the user to a new page.
 
-![](CraftersClosetPlanning/EarlyScreenshots/ProjectCreationPage.png)
+![](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/ProjectCreationPage.PNG)
 
 This page lets users give a title, description, and a link to a tutorial. The "Add a Supply to This Project" button generates a form with the same fields as the "Add Supply" form when pressed. A user just has to enter the supply details in the forms they generate to specify the supplies associated with the project.
 
 Once a user presses "Create Project," the project is added to the database and the user is taken to the project's landing page.
 
-![](CraftersClosetPlanning/EarlyScreenshots/NewProjectPage.png)
+![](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/NewProjectPage.PNG)
 
 Project pages tell authenticated users how much of a required supply they need to buy to make a project. In this example, the authenticated user (not necessarily jhacks, the demo project creator) doesn't own either of the supplies required for this project, so they have to buy the full amount.
 
