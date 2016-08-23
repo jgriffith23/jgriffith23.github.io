@@ -45,7 +45,7 @@ To that end, here's how I've structured my project so far, in terms of data and 
 
 My database has five tables, which work together to represent all supplies my app's users own, all supplies in projects my users want to build, and the details about those supplies.
 
-![](CraftersClosetPlanning/CraftersClosetDataModel.svg)
+![](https://github.com/jgriffith23/jgriffith23.github.io/blob/master/assets/CC-early-screens/CraftersClosetDataModel.png?raw=true)
 
 This data model shows the following relationships:
 
