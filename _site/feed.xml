@@ -6,15 +6,79 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Aug 2016 22:31:11 -0700</pubDate>
-    <lastBuildDate>Mon, 22 Aug 2016 22:31:11 -0700</lastBuildDate>
+    <pubDate>Mon, 12 Sep 2016 11:35:56 -0700</pubDate>
+    <lastBuildDate>Mon, 12 Sep 2016 11:35:56 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Crafter&#39;s Closet Version 0</title>
+        <description>&lt;p&gt;My Hackbright project is done! Mind if I just gush for a minute?&lt;/p&gt;
+
+&lt;h1 id=&quot;new-features-and-spiffiness&quot;&gt;New Features and Spiffiness&lt;/h1&gt;
+
+&lt;p&gt;Last time I posted, I was halfway through the month-long process of building a
+capstone project to demonstrate the skills I’ve learned at Hackbright. The next
+couple of weeks were kind of a whirlwind of adding features, testing, and prettification.
+Here’s where my little inventory tool landed in the end:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/crafters-closet/raw/master/static/assets/Screenshots/Homepage.png&quot; alt=&quot;Landing Page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/crafters-closet/raw/master/static/assets/Screenshots/DashboardChart.png&quot; alt=&quot;Dashboard Top&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/crafters-closet/raw/master/static/assets/Screenshots/Inventory.png&quot; alt=&quot;Inventory&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/crafters-closet/raw/master/static/assets/Screenshots/Add-Supply.png&quot; alt=&quot;Adding a Supply&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m still using the same calming color palette that &lt;a href=&quot;https://github.com/paigebernier&quot;&gt;paigebernier&lt;/a&gt; and I discovered
+during one of our early Hackbright labs, but there’s a bit more going on now than there was in the last Crafter’s
+Closet post. For a look at the actual code, you can check out the project’s &lt;a href=&quot;https://github.com/jgriffith23/crafters-closet&quot;&gt;GitHub page&lt;/a&gt;,
+but I’ll talk a little about what’s new here.&lt;/p&gt;
+
+&lt;h2 id=&quot;inventory-chart&quot;&gt;Inventory Chart&lt;/h2&gt;
+
+&lt;p&gt;The dashboard now has a colorful doughnut chart, powered by &lt;a href=&quot;http://www.chartjs.org/&quot;&gt;Chart.js&lt;/a&gt;.
+It’s meant to be a visual representation of how much of the space in your craft box each type of supply in
+your inventory occupies. Admittedly, the actual calculation needs some work (a plan for v1.0), but the
+idea is that 20 yards of yarn should get a bigger slice of the doughnut than 20 LEDs.&lt;/p&gt;
+
+&lt;h2 id=&quot;updating-stock&quot;&gt;Updating Stock&lt;/h2&gt;
+
+&lt;p&gt;Earlier screenshots of Crafter’s Closet showed a bunch of Update buttons on the inventory table. Until the
+second sprint of my project, those buttons didn’t actually &lt;em&gt;do&lt;/em&gt; anything. Now, when you click one, a callback
+function in an event listener attached to that button toggles a hidden text field into view. When you type
+a number into that text box and click the Done button, the new stock value gets sent to the server via
+an AJAX POST request, and that inventory item is updated in the database. (The inventory table does also get
+updated.)&lt;/p&gt;
+
+&lt;p&gt;You can also now use this feature to delete items from your inventory completely! All you’d have to do
+is type 0 into the text box.&lt;/p&gt;
+
+&lt;h2 id=&quot;autocompleting-fields&quot;&gt;Autocompleting Fields&lt;/h2&gt;
+
+&lt;p&gt;Throughout this project, one of my goals was to keep the data in my database clean and streamlined. If I
+ever deploy, I do want to allow users to add completely new supply details to my database, but where possible,
+I want to do as much as I can to avoid misspelled duplicates.&lt;/p&gt;
+
+&lt;p&gt;To that end, I added autocomplete functionality to the Color field when users add new supplies to their 
+inventory. Selecting a supply type causes the Brands dropdown to populate with only options for&lt;/p&gt;
+
+&lt;h2 id=&quot;password-hashing&quot;&gt;Password Hashing&lt;/h2&gt;
+
+</description>
+        <pubDate>Mon, 22 Aug 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/hackbright/2016/08/22/CraftersCloset-Reflections.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/hackbright/2016/08/22/CraftersCloset-Reflections.html</guid>
+        
+        
+        <category>hackbright</category>
+        
+      </item>
     
       <item>
         <title>Halfway Through My First Project Sprint</title>
         <description>&lt;p&gt;At Hackbright, we’re halfway through our first sprint of project time. We’ve all spent the last two weeks working like crazy to get a minimum viable project off the ground, and as part of our homework this past weekend, we were asked to take some time to reflect.&lt;/p&gt;
 
-&lt;p&gt;Several of the reflection prompts we received to write on were very much in line with thoughts I wanted to share here, so I figured I’d just share some of those now.&lt;/p&gt;
+&lt;p&gt;Several of the reflection prompts we received to write on were very much in line with thoughts I wanted to blog about here anyway, so I figured I’d just share some of those now.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-inspired-you-to-do-this-project&quot;&gt;What inspired you to do this project?&lt;/h1&gt;
 
@@ -56,7 +120,7 @@
 
 &lt;p&gt;My database has five tables, which work together to represent all supplies my app’s users own, all supplies in projects my users want to build, and the details about those supplies.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/CraftersClosetDataModel.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/jgriffith23.github.io/blob/master/assets/CC-early-screens/CraftersClosetDataModel.png?raw=true&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This data model shows the following relationships:&lt;/p&gt;
 
@@ -73,46 +137,42 @@
 &lt;h2 id=&quot;site-pages-and-connections&quot;&gt;Site Pages and Connections&lt;/h2&gt;
 &lt;p&gt;When a user first arrives at my homepage, they see a landing page where they can search for projects other users have created, register, or authenticate. On registration, a user is authenticated automatically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/LandingPage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The screenshot above shows the landing page after a user deauthenticated.&lt;/p&gt;
-
 &lt;p&gt;I’ll take you on a little tour of the application so far, but try to ignore the actual data. Some of it is…creative. I blame the debugging process.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-dashboard&quot;&gt;The Dashboard&lt;/h3&gt;
 &lt;p&gt;On authentication, a user is taken to the dashboard.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/Dashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/jgriffith23.github.io/blob/master/assets/CC-early-screens/Dashboard.png?raw=true&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From the dashboard, a user can filter their inventory view…&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/InventoryFilter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/InventoryFilter.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Or search their inventory.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/SearchInventory.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/jgriffith23/jgriffith23.github.io/blob/master/assets/CC-early-screens/SearchInventory.PNG?raw=true&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Users can also add supplies to their inventory from their dashboard by clicking “Add a Supply!” and submitting the form in the modal window that appears on click.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/AddSupply.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/AddSupply.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As the full dashboard screenshot below shows, users can also view a list of their projects from the dashboard.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/FullDashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/FullDashboard.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;project-pages&quot;&gt;Project Pages&lt;/h3&gt;
 
 &lt;p&gt;From the dashboard, a user can choose to create a new project. Clicking “Create a New Project” takes the user to a new page.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/ProjectCreationPage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/ProjectCreationPage.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This page lets users give a title, description, and a link to a tutorial. The “Add a Supply to This Project” button generates a form with the same fields as the “Add Supply” form when pressed. A user just has to enter the supply details in the forms they generate to specify the supplies associated with the project.&lt;/p&gt;
 
 &lt;p&gt;Once a user presses “Create Project,” the project is added to the database and the user is taken to the project’s landing page.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;CraftersClosetPlanning/EarlyScreenshots/NewProjectPage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/CC-early-screens/NewProjectPage.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Project pages tell authenticated users how much of a required supply they need to buy to make a project. In this example, the authenticated user (not necessarily jhacks, the project creator) doesn’t own either of the supplies required for this project, so they have to buy the full amount.&lt;/p&gt;
+&lt;p&gt;Project pages tell authenticated users how much of a required supply they need to buy to make a project. In this example, the authenticated user (not necessarily jhacks, the demo project creator) doesn’t own either of the supplies required for this project, so they have to buy the full amount.&lt;/p&gt;
 
 &lt;h3 id=&quot;okay-so-wheres-the-javascript&quot;&gt;Okay, so where’s the JavaScript?&lt;/h3&gt;
 
