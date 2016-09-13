@@ -84,7 +84,7 @@ Now, this item should be in the box...
 ['d20', 'pencil', 'character sheet', 'game rule book', 'robe', 'wizard hat', 'pokeball']
 {% endhighlight %}
 
-There it is! The shared box has Barb's Pokemon stuff, and our heroines are ready to go
+There it is! The shared box has Barb's Pokemon stuff, and our heroes are ready to go
 fight some dragons. Or capture Dragonairs. Maybe both.
 
 But remember, `our_box` and `my_box` are still looking at the same place in memory, just
