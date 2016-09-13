@@ -22,7 +22,7 @@ Just means you have two copies of `[1, 2, 3]` in memory. But in Python, assignin
 another binds two names to the same piece of memory. For instance, say Alice wants to 
 represent her box of RPG campaign supplies as a list. Here's the box:
 
-![A box (list) of game stuff.](assets/my_box.png)
+![A box (list) of game stuff.](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/my_box.png)
 
 And here's Alice's list.
 
@@ -33,7 +33,7 @@ And here's Alice's list.
 Alice is looking at her box, rather pleased with her packing job at this point, when 
 her friend Barb comes over.
 
-![Can we share?](can_we_share.png)
+![Can we share?](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/can_we_share.png)
 
 Barb wants to share the box with Alice, so they only have to carry one box around.
 Alice figures that's cool, so she updates her Python code, too:
@@ -47,7 +47,7 @@ Alice figures that's cool, so she updates her Python code, too:
 Now, Alice and Barb can refer to `our_box` when they talk about the container for
 their game stuff. Sweet!
 
-![Still my_box, but okay.](still_mine.png)
+![Still my_box, but okay.](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/still_mine.png)
 
 But just because there's another label on the box, that doesn't
 mean the old label went away. Just try asking the Python interpreter whether
@@ -64,7 +64,7 @@ Python says `our_box` and `my_box` are literally the same item.
 
 Now, Barb wants to spice up the campaign by adding Pokemon to the mix.
 
-![Let's add a Pokeball, ok?](pokeball.png)
+![Let's add a Pokeball, ok?](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/pokeball.png)
 
 Alice isn't sure how well that will go over, but she's willing to go along with this idea.
 She appends the new item to her Python list, too.
@@ -75,7 +75,7 @@ She appends the new item to her Python list, too.
 
 Now, this item should be in the box...
 
-![This box is my life now.](our_box.png)
+![This box is my life now.](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/our_box.png)
 
 ...and Alice's list.
 
@@ -91,7 +91,7 @@ But remember, `our_box` and `my_box` are still looking at the same place in memo
 like Alice and Barb are looking at the same box! The original binding never went away, 
 meaning this picture is also correct:
 
-![But this is also true.](g4147.png)
+![But this is also true.](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/g4147.png)
 
 After all, `our_box` is still Alice's box. You can confirm this in the interpreter
 as follows:
