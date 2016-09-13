@@ -6,15 +6,117 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Sep 2016 11:35:56 -0700</pubDate>
-    <lastBuildDate>Mon, 12 Sep 2016 11:35:56 -0700</lastBuildDate>
+    <pubDate>Mon, 12 Sep 2016 22:09:30 -0700</pubDate>
+    <lastBuildDate>Mon, 12 Sep 2016 22:09:30 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Doodles About Lists in Memory</title>
+        <description>&lt;p&gt;For months, I’ve been meaning to copy one of my earliest Hackbright lecture doodles
+to my computer: a fun lil zine-ish comic about lists. Now that I have a bit more free time 
+(and some inspiration courtesy of &lt;a href=&quot;https://twitter.com/sfzinefest&quot;&gt;SF Zine Fest&lt;/a&gt;),
+I finally did the thing.&lt;/p&gt;
+
+&lt;p&gt;When I learned about how lists work in memory in Python, my mind was blown. I’m used to
+living in a land where saying something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a = [1, 2, 3]
+b = a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just means you have two copies of &lt;code class=&quot;highlighter-rouge&quot;&gt;[1, 2, 3]&lt;/code&gt; in memory. But in Python, assigning one list to 
+another binds two names to the same piece of memory. For instance, say Alice wants to 
+represent her box of RPG campaign supplies as a list. Here’s the box:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/my_box.png&quot; alt=&quot;A box (list) of game stuff.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here’s Alice’s list.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;d20&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pencil&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;character sheet&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;game rule book&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;robe&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;wizard hat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Alice is looking at her box, rather pleased with her packing job at this point, when 
+her friend Barb comes over.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;can_we_share.png&quot; alt=&quot;Can we share?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Barb wants to share the box with Alice, so they only have to carry one box around.
+Alice figures that’s cool, so she updates her Python code, too:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_box&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;d20&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pencil&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;character sheet&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;game rule book&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;robe&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;wizard hat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, Alice and Barb can refer to &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; when they talk about the container for
+their game stuff. Sweet!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;still_mine.png&quot; alt=&quot;Still my_box, but okay.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But just because there’s another label on the box, that doesn’t
+mean the old label went away. Just try asking the Python interpreter whether
+the two boxes are the same item in memory:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_box&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;d20&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pencil&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;character sheet&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;game rule book&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;robe&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;wizard hat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_box&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Python says &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;my_box&lt;/code&gt; are literally the same item.&lt;/p&gt;
+
+&lt;p&gt;Now, Barb wants to spice up the campaign by adding Pokemon to the mix.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;pokeball.png&quot; alt=&quot;Let&#39;s add a Pokeball, ok?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Alice isn’t sure how well that will go over, but she’s willing to go along with this idea.
+She appends the new item to her Python list, too.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;pokeball&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, this item should be in the box…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;our_box.png&quot; alt=&quot;This box is my life now.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;…and Alice’s list.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;d20&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pencil&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;character sheet&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;game rule book&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;robe&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;wizard hat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pokeball&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;There it is! The shared box has Barb’s Pokemon stuff, and our heroines are ready to go
+fight some dragons. Or capture Dragonairs. Maybe both.&lt;/p&gt;
+
+&lt;p&gt;But remember, &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;my_box&lt;/code&gt; are still looking at the same place in memory, just
+like Alice and Barb are looking at the same box! The original binding never went away, 
+meaning this picture is also correct:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;g4147.png&quot; alt=&quot;But this is also true.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After all, &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; is still Alice’s box. You can confirm this in the interpreter
+as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_box&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;d20&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pencil&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;character sheet&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;game rule book&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;robe&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;wizard hat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pokeball&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_box&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And that’s how Alice and Barb ended up playing a high-fantasy/Pokemon cross-over
+pen-and-paper RPG campaign. Sharing memory, like sharing fun memories, is caring!&lt;/p&gt;
+
+&lt;p&gt;(Yes, I hate myself a little for that last line.)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Sep 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/doodles/2016/09/12/List-Doodles.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/doodles/2016/09/12/List-Doodles.html</guid>
+        
+        
+        <category>doodles</category>
+        
+      </item>
     
       <item>
         <title>Crafter&#39;s Closet Version 0</title>
         <description>&lt;p&gt;My Hackbright project is done! Mind if I just gush for a minute?&lt;/p&gt;
 
-&lt;h1 id=&quot;new-features-and-spiffiness&quot;&gt;New Features and Spiffiness&lt;/h1&gt;
+&lt;h2 id=&quot;new-features-and-spiffiness&quot;&gt;New Features and Spiffiness&lt;/h2&gt;
 
 &lt;p&gt;Last time I posted, I was halfway through the month-long process of building a
 capstone project to demonstrate the skills I’ve learned at Hackbright. The next
@@ -31,17 +133,17 @@ Here’s where my little inventory tool landed in the end:&lt;/p&gt;
 
 &lt;p&gt;I’m still using the same calming color palette that &lt;a href=&quot;https://github.com/paigebernier&quot;&gt;paigebernier&lt;/a&gt; and I discovered
 during one of our early Hackbright labs, but there’s a bit more going on now than there was in the last Crafter’s
-Closet post. For a look at the actual code, you can check out the project’s &lt;a href=&quot;https://github.com/jgriffith23/crafters-closet&quot;&gt;GitHub page&lt;/a&gt;,
-but I’ll talk a little about what’s new here.&lt;/p&gt;
+Closet post. For a look at the actual code, and the final tech stack, you can check out the project’s 
+&lt;a href=&quot;https://github.com/jgriffith23/crafters-closet&quot;&gt;GitHub page&lt;/a&gt;, but I’ll talk a little about what’s new here.&lt;/p&gt;
 
-&lt;h2 id=&quot;inventory-chart&quot;&gt;Inventory Chart&lt;/h2&gt;
+&lt;h3 id=&quot;inventory-chart&quot;&gt;Inventory Chart&lt;/h3&gt;
 
 &lt;p&gt;The dashboard now has a colorful doughnut chart, powered by &lt;a href=&quot;http://www.chartjs.org/&quot;&gt;Chart.js&lt;/a&gt;.
 It’s meant to be a visual representation of how much of the space in your craft box each type of supply in
 your inventory occupies. Admittedly, the actual calculation needs some work (a plan for v1.0), but the
 idea is that 20 yards of yarn should get a bigger slice of the doughnut than 20 LEDs.&lt;/p&gt;
 
-&lt;h2 id=&quot;updating-stock&quot;&gt;Updating Stock&lt;/h2&gt;
+&lt;h3 id=&quot;updating-stock&quot;&gt;Updating Stock&lt;/h3&gt;
 
 &lt;p&gt;Earlier screenshots of Crafter’s Closet showed a bunch of Update buttons on the inventory table. Until the
 second sprint of my project, those buttons didn’t actually &lt;em&gt;do&lt;/em&gt; anything. Now, when you click one, a callback
@@ -53,21 +155,137 @@ updated.)&lt;/p&gt;
 &lt;p&gt;You can also now use this feature to delete items from your inventory completely! All you’d have to do
 is type 0 into the text box.&lt;/p&gt;
 
-&lt;h2 id=&quot;autocompleting-fields&quot;&gt;Autocompleting Fields&lt;/h2&gt;
+&lt;h3 id=&quot;autocompleting-fields&quot;&gt;Autocompleting Fields&lt;/h3&gt;
 
 &lt;p&gt;Throughout this project, one of my goals was to keep the data in my database clean and streamlined. If I
 ever deploy, I do want to allow users to add completely new supply details to my database, but where possible,
 I want to do as much as I can to avoid misspelled duplicates.&lt;/p&gt;
 
 &lt;p&gt;To that end, I added autocomplete functionality to the Color field when users add new supplies to their 
-inventory. Selecting a supply type causes the Brands dropdown to populate with only options for&lt;/p&gt;
+inventory. Selecting a supply type causes the Brands dropdown to populate with only brands associated with
+that supply type. Once you choose a brand, the JQuery UI Autocomplete widget receives all colors associated 
+with that brand in the database so that when you type, you’ll see existing colors that match your string.&lt;/p&gt;
 
-&lt;h2 id=&quot;password-hashing&quot;&gt;Password Hashing&lt;/h2&gt;
+&lt;p&gt;I also added autocomplete to the search box where you can filter your inventory. That field’s autocomplete
+tags will only ever include strings that match items in your inventory.&lt;/p&gt;
+
+&lt;h3 id=&quot;password-hashing&quot;&gt;Password Hashing&lt;/h3&gt;
+
+&lt;p&gt;No user will ever see this feature in action, but it was still very important to me because if I ever deploy,
+I want to try to be security conscious. Instead of storing passwords in plaintext in the database, I’m now
+using Bcrypt to create hashes to store and check against.&lt;/p&gt;
+
+&lt;h3 id=&quot;more-supply-data&quot;&gt;More Supply Data&lt;/h3&gt;
+
+&lt;p&gt;This is another new bit that users can’t really see, but I had a lot of fun making it happen. Over time,
+I want to keep adding new supplies to my database so users can document all the brands they add to their
+inventory. For now, to beef up my dataset, I downloaded some product catalogs and took them apart.&lt;/p&gt;
+
+&lt;p&gt;Yarn and paint catalogs tend to just have brands, colors, and pictures in them, so I used the &lt;code class=&quot;highlighter-rouge&quot;&gt;pdftotext&lt;/code&gt;
+command to extract just the text from some catalog PDFs. From there, I cracked the text files open in Vim 
+and put some handy regexes to work to clean up superfluous text. Finally, I ran the text files through a 
+Python script I wrote to generate a CSV that had all the information my &lt;em&gt;seed.py&lt;/em&gt; program needs to make
+new database records.&lt;/p&gt;
+
+&lt;p&gt;Massaging all that data into the exact format I wanted was surprisingly satisfying. I could easily see
+myself spending an afternoon just fetching a bunch of data for funsies. Maybe after that, I can 
+create an API for my app, so other people can get giant lists of craft supplies!&lt;/p&gt;
+
+&lt;h3 id=&quot;pretty-stuff&quot;&gt;Pretty Stuff&lt;/h3&gt;
+
+&lt;p&gt;I’m not fond of the prettification process, but I’m pretty pleased with how my project ended up
+looking. I made the app generally more responsive (apparently just puting the body section in
+a &lt;code class=&quot;highlighter-rouge&quot;&gt;container-fluid&lt;/code&gt; div makes everything stack nicely on shrinking if you’re using bootstrap),
+added a spiffy background, picked some fonts, and applied my “brand” color (#80dfff) more
+consistently.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
+
+&lt;p&gt;Ultimately, I ended up with an app that works. It’s not perfect, but it does what I created it
+to do. I feel pretty good about all that, but I did run into some challenges along the way.&lt;/p&gt;
+
+&lt;h3 id=&quot;getting-comfortable-with-ajax&quot;&gt;Getting Comfortable with AJAX&lt;/h3&gt;
+
+&lt;p&gt;I think my biggest challenge was getting along with JavaScript. I was really nervous about trying out JQuery 
+and AJAX requests because I was more comfortable with Python, and the first place I took the plunge was 
+with filtering my inventory table.&lt;/p&gt;
+
+&lt;p&gt;Major shoutout to Tim, one of my three amazing mentors, for helping me plan the whole thing out. 
+I’ve never been so glad I forced myself to take over whiteboarding the solution to a problem! I had
+the “aha” moment I’d been waiting for, and I’ve felt a lot more comfortable making AJAX requests
+since. In fact, I daresay I enjoy it.&lt;/p&gt;
+
+&lt;p&gt;We discussed which piece of my page would make the most sense to break into its own template, 
+walked through the JQuery code and AJAX calls I’d need to make to get the new table data, and planned 
+which Flask routes I’d need to add to get the data from the database. By having someone else ask me 
+questions about my app’s architecture, I developed a better understanding of it myself. From there, 
+it was just a matter of coding carefully and making the right database queries.&lt;/p&gt;
+
+&lt;p&gt;I developed a little system for myself for writing AJAX requests for data:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Write an event listener and handler for the element that the user should click to start this process. Have the event handler print something amusing to the browser console, so you know you got inside the function. (And to make yourself laugh. Just delete the debug code when you’re done.)&lt;/li&gt;
+  &lt;li&gt;Write a Flask route that returns the arguments it got from JavaScript. Print that to the browser console, too. (This step is where I learned that I needed to URL-encode my search parameters so spaces, ampersands, and so on, would make it through to the server intact.)&lt;/li&gt;
+  &lt;li&gt;Write any Python code needed to get the actual data out. Return that data to JavaScript from the Flask route. Plop it straight where you want the updated HTML to go.&lt;/li&gt;
+  &lt;li&gt;When you can see your data reach the front end, you’re ready to actually make HTML, whether the server crafts and passes that HTML forward or JavaScript handles placing it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;My server renders new HTML for the inventory table and sends it to the front end because that was the 
+easiest way for me to get my head around the process at first. In v1.0, I want to try passing a JSON object forward instead, 
+so I can let JavaScript handle placement.&lt;/p&gt;
+
+&lt;h3 id=&quot;knowing-when-to-pivot-to-different-technology&quot;&gt;Knowing When to Pivot to Different Technology&lt;/h3&gt;
+
+&lt;p&gt;The autocomplete feature took me a couple of days, which was a solid day and a half longer than I was expecting
+to spend on it. The main reason for the delay was stubborn determination to get the &lt;a href=&quot;https://twitter.github.io/typeahead.js/examples/&quot;&gt;Typeahead&lt;/a&gt; 
+library working.&lt;/p&gt;
+
+&lt;p&gt;At first, I couldn’t get my autocomplete tags to populate at all without hard-coding a list into the
+JavaScript code for the feature. Turns out Typeahead actually caches your tags, so if the list isn’t
+there when the code runs, the list gets cached as empty.&lt;/p&gt;
+
+&lt;p&gt;I managed to turn off caching, and I started prefetching and processing a list
+of tags from the server. That let me at least populate the list once without hard coding it, but unfortunately,
+I couldn’t seem to get my tag fetching code to work inside a callback function.&lt;/p&gt;
+
+&lt;p&gt;After beating my head against this problem for a day, I nearly gave up on autocomplete. Before giving up, however,
+I decided to give JQuery UI’s autocomplete widget a shot. After discovering a rogue extra JQuery import statement
+in my HTML templates (apparently I was overwriting the JQuery UI code with that second import), the widget worked 
+brilliantly, and I got the feature up and running quickly.&lt;/p&gt;
+
+&lt;p&gt;I haven’t had a good chance to try Typeahead again since deleting the extra import statement, but in the coming weeks,
+I want to check whether the problem was purely ebkac or not. My research indicates the library just doesn’t support
+events, but we’ll see.&lt;/p&gt;
+
+&lt;p&gt;In any case, I did learn that if you’re beating your head against a wall, pivoting to something new
+can help you break through that blocker.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Eventually, I plan to deploy Crafter’s Closet to the Web (many of the folks in my class want to try
+deploying, I think). But first, I have a few more goals to achieve, along with the refactors I mentioned above.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add more form validation.&lt;/li&gt;
+  &lt;li&gt;Add more craft supplies to the database!&lt;/li&gt;
+  &lt;li&gt;Implement a feature for photo uploads.&lt;/li&gt;
+  &lt;li&gt;Allow users to write longer project descriptions.&lt;/li&gt;
+  &lt;li&gt;Allow users to update project pages, including the supplies required.&lt;/li&gt;
+  &lt;li&gt;Add public-facing user profile pages.&lt;/li&gt;
+  &lt;li&gt;Implement a “favorite” feature, so users can bookmark projects&lt;/li&gt;
+  &lt;li&gt;Implement a feature where users can mark projects as completed and their inventory updates accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of these might be v2.0 ideas, but I do plan to keep adding to this project over time. I’d also
+like to run some pentesting tools like Burp on my app to see where the glaring holes that
+I know must exist are hanging out and try to patch as many as I can.&lt;/p&gt;
+
+&lt;p&gt;First, though, I think I need a few days to rest. Hackbright is amazing, but it’s also exhausting!&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 22 Aug 2016 00:00:00 -0700</pubDate>
-        <link>http://jgriffith23.github.io/hackbright/2016/08/22/CraftersCloset-Reflections.html</link>
-        <guid isPermaLink="true">http://jgriffith23.github.io/hackbright/2016/08/22/CraftersCloset-Reflections.html</guid>
+        <pubDate>Mon, 12 Sep 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/hackbright/2016/09/12/CraftersCloset-Reflections.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/hackbright/2016/09/12/CraftersCloset-Reflections.html</guid>
         
         
         <category>hackbright</category>
