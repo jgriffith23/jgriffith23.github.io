@@ -88,7 +88,7 @@ There it is! The shared box has Barb's Pokemon stuff, and our heroes are ready t
 fight some dragons. Or capture Dragonairs. Maybe both.
 
 But remember, `our_box` and `my_box` are still looking at the same place in memory, just
-like Alice and Barb are looking at the same box! The original binding never went away, 
+like Alice and Barb are looking at the same box. The original binding never went away, 
 meaning this picture is also correct:
 
 ![But this is also true.](https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/g4147.png)
