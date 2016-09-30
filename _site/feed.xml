@@ -6,9 +6,106 @@
 </description>
     <link>http://jgriffith23.github.io/</link>
     <atom:link href="http://jgriffith23.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Sep 2016 22:09:30 -0700</pubDate>
-    <lastBuildDate>Mon, 12 Sep 2016 22:09:30 -0700</lastBuildDate>
+    <pubDate>Thu, 29 Sep 2016 21:26:07 -0700</pubDate>
+    <lastBuildDate>Thu, 29 Sep 2016 21:26:07 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>The Close of Fellowship 15 and New Adventures</title>
+        <description>&lt;p&gt;I’m officially a software engineer! No really, I have a certificate and everything.
+And a sweet red graduation robe–er, hoodie.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/graduation.jpg&quot; alt=&quot;I graduated!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(Also, let’s not forget that I have a pretty awesome first project under my belt,
+too. Have I pointed you to it yet? No? 
+&lt;a href=&quot;https://github.com/jgriffith23/crafters-closet&quot;&gt;Here’s the code.&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&quot;on-closing-one-chapter&quot;&gt;On Closing One Chapter&lt;/h2&gt;
+
+&lt;p&gt;My Hackbright fellowship term ended last week, and I’m pretty sure 
+&lt;a href=&quot;https://www.youtube.com/watch?v=QU4JeBJL7JY&quot;&gt;the song from the end credits of &lt;em&gt;Wreck it Ralph&lt;/em&gt;&lt;/a&gt; 
+is the best way to describe how I feel. I’ve made so many amazing friends in the last
+three months that it’s hard to comprehend that I’m not going to see all of them
+every day anymore!&lt;/p&gt;
+
+&lt;p&gt;Seriously, this group of incredibly smart, driven, talented, generally wonderful 
+women became like a family to me. We have this insane shared experience of soaking up
+as much knowledge about software engineering as we could over the course of 12 weeks,
+and for me at least, I can’t imagine a better group to have gone through it with. 
+Each person in my cohort inspired me in some way to strive to become a better engineer. 
+Seeing their projects at the end of the course blew me away in terms of tech and 
+creativity, and I’m still so proud just thinking of everything they accomplished.&lt;/p&gt;
+
+&lt;p&gt;Fellow Adas, you taught me so much; thank you. We did the thing. It was hard, but 
+we made it to the end, and our new journies are only just beginning. I can’t wait 
+to see what you do next, because I know it’ll be epic.&lt;/p&gt;
+
+&lt;h2 id=&quot;thoughts-on-career-weeks&quot;&gt;Thoughts on Career Weeks&lt;/h2&gt;
+
+&lt;p&gt;Since I’ve touched on several bits of the Hackbright curriculum in some way over the last few
+months, I’d be remiss if I didn’t say something about weeks 11 and 12 in my last
+“in progress” reflection post. Now that I’ve got the sentimental bit written,
+here are some of my impressions on those less programming-heavy pieces.&lt;/p&gt;
+
+&lt;p&gt;The last couple weeks of each fellowship are focused on career development. That 
+means lots of whiteboarding practice (both with Hackbright staff and at partner 
+company offices), interview practice, and interesting speakers.&lt;/p&gt;
+
+&lt;p&gt;I was only able to whiteboard with the ed staff, but they were all very encouraging,
+and just being exposed to possible interview questions was helpful. We also had a
+chance to work through some more complex “coding challenge” type puzzles (the kind
+you might receive as a take-home challenge), which I found fascinating.&lt;/p&gt;
+
+&lt;p&gt;The talks I saw were helpful to varying extents. A few stick out in particular
+in my memory:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Seema Ullal’s Git presentation.&lt;/strong&gt; I wish I’d seen this before doing my first 
+hackathon, but at the same time, I don’t think I would have appreciated Seema’s 
+awesome tips and explanations as much without experiencing the struggle of Git 
+collaboration firsthand. I definitely want to try out her setup suggestions and 
+play with hooks.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sharon Wienbar’s equity talk.&lt;/strong&gt; Sharon is the CEO of Hackbright, and she’s just such an 
+inspiration that I think I would have loved any talk she gave. I didn’t know much 
+about equity going in, but her lecture clarified quite a few things. I know I’ll 
+refer back to it someday. Thanks, Sharon!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Robert Slifka’s lecture on interviewing companies.&lt;/strong&gt; The questions he suggested 
+asking here made a lot of sense and offered a great framework for getting the info 
+you need in an interview.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ian Chan’s technical interview talk.&lt;/strong&gt; Entertaining and informative! Ian made technical 
+interviews feel a little less scary by breaking them down into their component parts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ultimately, I’d suggest any future Hackbright student try to make it to Hackbright
+during as many of these events as possible. If you wind up not wanting to watch a 
+talk, you’ll at least be in the building with other students. You can grab a lab 
+and practice whiteboarding, work on code challenges, or even work on your next 
+project. Make as much use of the Hackbright space and time structure while they’re 
+available to you regularly.&lt;/p&gt;
+
+&lt;h2 id=&quot;starting-a-new-journey&quot;&gt;Starting a New Journey&lt;/h2&gt;
+&lt;p&gt;We’re all setting out on new adventures, and I’ve actually found a clear path to 
+follow, at least for a while: I’m now a teaching assisstant at Hackbright! Though
+seeing a whole new cohort in the space my group called home for three months is
+a bit crazy, I’m really psyched about this opportunity. I have a chance to dig
+further into Python and explore areas of software engineering that I’m excited about,
+and I get to teach while I do it. I’ve always had fun explaining things and seeing people
+have those “aha” moments; I’ve only been at it regularly for a few days, but helping 
+other women learn for even that long has already brought me so much joy.&lt;/p&gt;
+
+&lt;p&gt;I still plan to go into industry, and when I do, I’ll have an even deeper understanding
+of software engineering. Until then, I’m going to have fun teaching and learning,
+dive down all the rabbit holes, and keep writing here.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Sep 2016 00:00:00 -0700</pubDate>
+        <link>http://jgriffith23.github.io/hackbright/2016/09/25/F15-reflections.html</link>
+        <guid isPermaLink="true">http://jgriffith23.github.io/hackbright/2016/09/25/F15-reflections.html</guid>
+        
+        
+        <category>hackbright</category>
+        
+      </item>
     
       <item>
         <title>Doodles About Lists in Memory</title>
@@ -29,7 +126,7 @@ b = a
 another binds two names to the same piece of memory. For instance, say Alice wants to 
 represent her box of RPG campaign supplies as a list. Here’s the box:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/my_box.png&quot; alt=&quot;A box (list) of game stuff.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/my_box.png&quot; alt=&quot;A box (list) of game stuff.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And here’s Alice’s list.&lt;/p&gt;
 
@@ -38,7 +135,7 @@ represent her box of RPG campaign supplies as a list. Here’s the box:&lt;/p&gt
 &lt;p&gt;Alice is looking at her box, rather pleased with her packing job at this point, when 
 her friend Barb comes over.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;can_we_share.png&quot; alt=&quot;Can we share?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/master/assets/can_we_share.png&quot; alt=&quot;Can we share?&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Barb wants to share the box with Alice, so they only have to carry one box around.
 Alice figures that’s cool, so she updates her Python code, too:&lt;/p&gt;
@@ -50,7 +147,7 @@ Alice figures that’s cool, so she updates her Python code, too:&lt;/p&gt;
 &lt;p&gt;Now, Alice and Barb can refer to &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; when they talk about the container for
 their game stuff. Sweet!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;still_mine.png&quot; alt=&quot;Still my_box, but okay.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/still_mine.png&quot; alt=&quot;Still my_box, but okay.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;But just because there’s another label on the box, that doesn’t
 mean the old label went away. Just try asking the Python interpreter whether
@@ -65,7 +162,7 @@ the two boxes are the same item in memory:&lt;/p&gt;
 
 &lt;p&gt;Now, Barb wants to spice up the campaign by adding Pokemon to the mix.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;pokeball.png&quot; alt=&quot;Let&#39;s add a Pokeball, ok?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/pokeball.png&quot; alt=&quot;Let&#39;s add a Pokeball, ok?&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Alice isn’t sure how well that will go over, but she’s willing to go along with this idea.
 She appends the new item to her Python list, too.&lt;/p&gt;
@@ -74,21 +171,21 @@ She appends the new item to her Python list, too.&lt;/p&gt;
 
 &lt;p&gt;Now, this item should be in the box…&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;our_box.png&quot; alt=&quot;This box is my life now.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/our_box.png&quot; alt=&quot;This box is my life now.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;…and Alice’s list.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our_box&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;d20&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pencil&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;character sheet&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;game rule book&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;robe&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;wizard hat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pokeball&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;There it is! The shared box has Barb’s Pokemon stuff, and our heroines are ready to go
+&lt;p&gt;There it is! The shared box has Barb’s Pokemon stuff, and our heroes are ready to go
 fight some dragons. Or capture Dragonairs. Maybe both.&lt;/p&gt;
 
 &lt;p&gt;But remember, &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;my_box&lt;/code&gt; are still looking at the same place in memory, just
-like Alice and Barb are looking at the same box! The original binding never went away, 
+like Alice and Barb are looking at the same box. The original binding never went away, 
 meaning this picture is also correct:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;g4147.png&quot; alt=&quot;But this is also true.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/jgriffith23/jgriffith23.github.io/39bf3201d1cbb4b8ffab254f864c3464b292e2f2/assets/g4147.png&quot; alt=&quot;But this is also true.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After all, &lt;code class=&quot;highlighter-rouge&quot;&gt;our_box&lt;/code&gt; is still Alice’s box. You can confirm this in the interpreter
 as follows:&lt;/p&gt;
@@ -1016,21 +1113,6 @@ helpful_function()
         
         
         <category>Hackbright</category>
-        
-      </item>
-    
-      <item>
-        <title>My First Post!</title>
-        <description>&lt;p&gt;I’m testing out my new GitHub blog setup with Jekyll. Since I’m about to learn a ton of Python, let’s start with a little &lt;em&gt;Hello World&lt;/em&gt; program. It is tradition after all.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-</description>
-        <pubDate>Thu, 30 Jun 2016 22:06:54 -0700</pubDate>
-        <link>http://jgriffith23.github.io/learning/2016/06/30/My-First-Post.html</link>
-        <guid isPermaLink="true">http://jgriffith23.github.io/learning/2016/06/30/My-First-Post.html</guid>
-        
-        
-        <category>learning</category>
         
       </item>
     
